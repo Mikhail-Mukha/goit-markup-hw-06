@@ -27,37 +27,126 @@
     <!-- HEADER -->
 
     <header>
+      <div class="container">
+        <nav class="header-nav">
+          <a class="header-nav-logo" href="./index.html"
+            >Web<span class="studio">Studio</span></a
+          >
+          <ul class="header-nav-list">
+            <li>
+              <a
+                class="header-nav-link current"
+                href="./index.html"
+                target="_blank"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="header-nav-link" href="" target="_blank">Portfolio</a>
+            </li>
+            <li>
+              <a class="header-nav-link" href="" target="_blank">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-        <div class="container">
+        <address class="header-address">
+          <ul class="header-address-list">
+            <li>
+              <a
+                class="header-address-link"
+                href="mailto:info@devstudio.com"
+                target="_blank"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a
+                class="header-address-link"
+                href="tel:+110001111111"
+                target="_blank"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
 
-            <nav class="header-nav">
-                <a class="header-nav-logo" href="./index.html" >Web<span class="studio">Studio</span></a>
-                <ul class="header-nav-list">
-                    <li> <a class="header-nav-link current" href="./index.html" target="_blank">Studio</a> </li>
-                    <li> <a class="header-nav-link" href="" target="_blank">Portfolio</a> </li>
-                    <li> <a class="header-nav-link" href="" target="_blank">Contacts</a> </li>
-                </ul>
-            </nav>
+        <button class="header-open-btn is-open" type="button">
+          <svg class="icon-burger" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
 
-            <address class="header-address">
-                <ul class="header-address-list">
-                    <li> <a class="header-address-link" href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a> </li>
-                    <li> <a class="header-address-link" href="tel:+110001111111" target="_blank">+11 (000) 111-11-11</a> </li>
-                </ul>
-            </address>
+      <div class="mob-menu ">
+        <button class="mob-close-btn" type="button">
+          <svg class="mob-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
-            <button class="header-open-btn is-open" type="button">
-              <svg class="icon-burger" width="24" height="24">
-                <use href="./images/icons.svg#icon-burger"></use>
-              </svg>
-            </button>
+        <nav class="mob-navigation">
+          <ul class="mob-nav-list">
+            <li class="mob-studio">
+              <a class="mob-nav-list" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-studio">
+              <a class="mob-nav-list" href="./index.html">Portfolio</a>
+            </li>
+            <li class="mob-studio">
+              <a class="mob-nav-list" href="./index.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-          </div>
+        <div>
+          <address class="mob-address">
+            <ul class="mob-address-list">
+              <li class="mob-address-items">
+                <a class="mob-address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mob-address-iems">
+                <a class="mob-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
 
-          <div class="mob-menu is-hiden">
-
-          </div>
-
+          <ul class="mob-media-list">
+            <li class="mob-media-list">
+              <a class="mob-media-items" href="./index.html">
+                <svg class="mob-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-list">
+              <a class="mob-media-items" href="./index.html">
+                <svg class="mob-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-list">
+              <a class="mob-media-items" href="./index.html">
+                <svg class="mob-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-media-list">
+              <a class="mob-media-items" href="./index.html">
+                <svg class="mob-media-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <!-- MAIN -->
@@ -329,12 +418,21 @@
             <li class="our-portfolio-item">
               <div class="our-portfolio-wrap">
                 <picture>
-                  <source srcset="./images/img41mob.jpg 1x, ./images/img41mob_2x.jpg 2x"
-                   media="(max-width: 767px)">
-                  <source srcset="./images/img41pl.jpg 1x, ./images/img41pl_2x.jpg 2x"
-                   media="(min-width: 768px)">
-                  <source srcset="./images/img41.jpg 1x, ./images/img41_2x.jpg 2x"
-                   media="(min-width: 1158px)">
+                  <source
+                    srcset="
+                      ./images/img41mob.jpg    1x,
+                      ./images/img41mob_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/img41pl.jpg 1x, ./images/img41pl_2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/img41.jpg 1x, ./images/img41_2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
                   <img src="./images/img41.jpg" alt="Banking App" width="360" />
                 </picture>
                 <p class="our-portfolio-context">
@@ -351,12 +449,21 @@
             <li class="our-portfolio-item">
               <div class="our-portfolio-wrap">
                 <picture>
-                  <source srcset="./images/img42mob.jpg 1x, ./images/img42mob_2x.jpg 2x"
-                   media="(max-width: 767px)">
-                  <source srcset="./images/img42pl.jpg 1x, ./images/img42pl_2x.jpg 2x"
-                    media="(min-width: 768px)">
-                  <source srcset="./images/img42.jpg 1x, ./images/img42_2x.jpg 2x"
-                    media="(min-width: 1158px)">
+                  <source
+                    srcset="
+                      ./images/img42mob.jpg    1x,
+                      ./images/img42mob_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/img42pl.jpg 1x, ./images/img42pl_2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/img42.jpg 1x, ./images/img42_2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
                   <img
                     src="./images/img42.jpg"
                     alt="Cashless Payment"
@@ -377,12 +484,21 @@
             <li class="our-portfolio-item">
               <div class="our-portfolio-wrap">
                 <picture>
-                  <source srcset="./images/img43mob.jpg 1x, ./images/img43mob_2x.jpg 2x"
-                  media="(max-width: 767px)">
-                  <source srcset="./images/img43pl.jpg 1x, ./images/img43pl_2x.jpg 2x"
-                   media="(min-width: 768px)">
-                  <source srcset="./images/img43.jpg 1x, ./images/img43_2x.jpg 2x"
-                   media="(min-width: 1158px)">
+                  <source
+                    srcset="
+                      ./images/img43mob.jpg    1x,
+                      ./images/img43mob_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/img43pl.jpg 1x, ./images/img43pl_2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/img43.jpg 1x, ./images/img43_2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
                   <img
                     src="./images/img43.jpg"
                     alt="Meditation App"
@@ -403,15 +519,26 @@
             <li class="our-portfolio-item">
               <div class="our-portfolio-wrap">
                 <picture>
-                  <source srcset="./images/img44mob.jpg 1x, ./images/img44mob_2x.jpg 2x"
-                   media="(max-width: 767px)">
-                  <source srcset="./images/img44pl.jpg 1x, ./images/img44pl_2x.jpg 2x"
-                    media="(min-width: 768px)">
-                  <source srcset="./images/img44.jpg 1x, ./images/img44_2x.jpg 2x"
-                    media="(min-width: 1158px)">
-                  <img src="./images/img44.jpg"
-                   alt="Taxi Service"
-                    width="360" />
+                  <source
+                    srcset="
+                      ./images/img44mob.jpg    1x,
+                      ./images/img44mob_2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="./images/img44pl.jpg 1x, ./images/img44pl_2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/img44.jpg 1x, ./images/img44_2x.jpg 2x"
+                    media="(min-width: 1158px)"
+                  />
+                  <img
+                    src="./images/img44.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                  />
                 </picture>
                 <p class="our-portfolio-context">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -426,12 +553,18 @@
             </li>
             <li class="our-portfolio-item">
               <div class="our-portfolio-wrap">
-                <source srcset="./images/img45mob.jpg 1x, ./images/img45mob_2x.jpg 2x"
-                  media="(max-width: 767px)">
-                <source srcset="./images/img45pl.jpg 1x, ./images/img45pl_2x.jpg 2x"
-                  media="(min-width: 768px)">
-                <source srcset="./images/img45.jpg 1x, ./images/img45_2x.jpg 2x"
-                  media="(min-width: 1158px)">
+                <source
+                  srcset="./images/img45mob.jpg 1x, ./images/img45mob_2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/img45pl.jpg 1x, ./images/img45pl_2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/img45.jpg 1x, ./images/img45_2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
                 <img
                   src="./images/img45.jpg"
                   alt="Screen Illustrations"
@@ -450,12 +583,18 @@
             </li>
             <li class="our-portfolio-item">
               <div class="our-portfolio-wrap">
-                <source srcset="./images/img46mob.jpg 1x, ./images/img46mob_2x.jpg 2x"
-                  media="(max-width: 767px)">
-                <source srcset="./images/img46pl.jpg 1x, ./images/img46pl_2x.jpg 2x"
-                  media="(min-width: 768px)">
-                <source srcset="./images/img46.jpg 1x, ./images/img46_2x.jpg 2x"
-                  media="(min-width: 1158px)">
+                <source
+                  srcset="./images/img46mob.jpg 1x, ./images/img46mob_2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/img46pl.jpg 1x, ./images/img46pl_2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/img46.jpg 1x, ./images/img46_2x.jpg 2x"
+                  media="(min-width: 1158px)"
+                />
                 <img
                   src="./images/img46.jpg"
                   alt="Online Courses"

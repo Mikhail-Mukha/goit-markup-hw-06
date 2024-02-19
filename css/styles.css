@@ -148,7 +148,6 @@ header .container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  font-style: normal;
   padding-top: 25.5px;
   padding-bottom: 25.5px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -173,6 +172,117 @@ header .container {
 
 .icon-burger {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background-color: #fcfcfc;
+  padding: 72px 24px 40px 16px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mob-icon-close {
+
+}
+
+.mob-navigation {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.mob-nav-list {
+  list-style-type: none;
+  display: block;
+  text-decoration: none;
+  color: #2E2F42;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+
+}
+
+.mob-studio {
+  cursor: pointer;
+  text-decoration: none;
+  color: #2E2F42;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.mob-address {
+  margin-bottom: 48px;
+  display: block;
+  font-style: italic;
+}
+
+.mob-address-list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 24px;
+}
+
+.mob-address-items {
+}
+
+.mob-address-link {
+  color: #434455;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mob-address-items {
+}
+
+.mob-media-list {
+  display: flex;
+  gap: 40px;
+}
+
+.mob-media-items {
+  display: flex;
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-media-icon {
+  fill: #F4F4FD;
 }
 
 .effective-solutions {
@@ -661,15 +771,15 @@ header .container {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* 
+
 .is-open {
     display: block;
 } */
-/* 
+
 .backdrop.is-open {
     opacity: 1;
     visibility: visible;
-} */
+}
 
 .modal {
   position: absolute;
@@ -961,7 +1071,7 @@ header .container {
 
   .our-portfolio-list {
     gap: 72px 24px;
-    /* flex-direction: row; */
+    flex-direction: row;
   }
 
   .our-portfolio-item {
@@ -1044,7 +1154,7 @@ header .container {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
-        ),
+          ),
       url(../images/people-office-background_2x.jpg);
     }
   }
